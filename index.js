@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
     res.send('Volunteer Network Server Running')
 });
 
-app.get('hello', (req, res) => {
+app.get('/hello', (req, res) => {
     res.send('Hello world')
 });
 
