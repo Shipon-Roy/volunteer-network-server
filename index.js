@@ -72,6 +72,7 @@ Every projects
 6. hroku login
 7. heroku create (only one time for a projects)
 8. command: git push heroku main
+9. heroku > app > sitting > add var (add DB_USER, DB_PASS)
 
 -----------
 
