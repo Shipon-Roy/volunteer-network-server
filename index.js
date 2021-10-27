@@ -23,14 +23,14 @@ async function run () {
         const servicesCollection = database.collection('services');
         const registerCollection = database.collection('register');
 
-        // Get services API 
+        // GET services API 
         app.get('/services', async (req, res) => {
             const cursor = servicesCollection.find({});
             const services = await cursor.toArray();
             res.send(services);
         })
 
-        //Post Register API
+        //POST Register API
         app.post('/register', async (req, res) => {
             const register = req.body;
             const submit = await registerCollection.insertOne(register);
