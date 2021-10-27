@@ -49,6 +49,36 @@ app.get('/', (req, res) => {
     res.send('Volunteer Network Server Running')
 });
 
+app.get('hello', (req, res) => {
+    res.send('Hello world')
+});
+
 app.listen(port, () => {
     console.log('Volunteer network at port', port);
 });
+
+
+/* 
+one time 
+1. heroku acount open
+2. hroku software install
+
+Every projects
+1. git init
+2. .gitignore (node_modules, .env)
+3. push everythinf to git 
+4. make sure you have this script ("start": "node index.js",)
+5. make sure : put proces.env.PORT in front your port number
+6. hroku login
+7. heroku create (only one time for a projects)
+8. command: git push heroku main
+
+-----------
+
+Update
+1. save everything check localy
+2. git add. , git commit -m "", git push
+3. git push heroku main
+
+
+*/
